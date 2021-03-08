@@ -72,7 +72,7 @@ public class P2_8_5 {
         // I used the method I described in part a.) to loop through all possible combinations
         // This number is then converted to a String so I can then easily check the value of different indexes
         // Converting to a array would also work
-        // Because I check for reflexivity before transitivity there are only 6 cases which fail for transitivity
+        // Because I check for reflexivity before transitivity there are only 6 cases I need to check for in the checkTransitive() method
         // The mapping of pair to digits is as follows
         // (1, 1)  (1, 2)  (1, 3)  (2, 1)  (2, 2)  (2, 3)  (3, 1)  (3, 2)  (3, 3)
         //    0       0       0       0       0       0       0       0       0
@@ -80,7 +80,7 @@ public class P2_8_5 {
         // So if only (1, 1) (1, 3) and (3, 2) are true for a relation then the binary representaion reads as
         // 101000010
         // When printing to the console I don't include any reflexive pair
-        System.out.println("All symmetric pairs are implied");
+        System.out.println("All reflexive pairs are implied");
         System.out.println(getAnswer());
     }
 }
